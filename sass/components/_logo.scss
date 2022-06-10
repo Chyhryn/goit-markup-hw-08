@@ -1,0 +1,24 @@
+/* Logo */
+
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: $accent-color;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.black-logo {
+  color: $black-color;
+}
+
+.white-logo {
+  color: $white-color;
+}
