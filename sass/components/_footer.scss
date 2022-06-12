@@ -4,17 +4,55 @@
   padding-bottom: 60px;
 }
 
+.footer-container {
+  @include mq(not-desktop) {
+    text-align: center;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @include mq(tablet-only) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.address {
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(tablet-only) {
+    min-width: 232px;
+    margin-right: 165px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 70px;
+    min-width: 231px;
+  }
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.address-text {
-  margin-bottom: 9px;
+.footer-address {
+  font-style: normal;
+  color: $white-color;
 }
 
+.address-text,
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @include mq(desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-link {
@@ -26,17 +64,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.address {
-  margin-right: 70px;
-}
-
 .footer-social-links {
-  margin-right: 93px;
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer-social-uppertext {
@@ -51,6 +86,9 @@
 
 .footer-social-list {
   display: flex;
+  @include mq(not-desktop) {
+    justify-content: center;
+  }
 }
 
 .footer-social-item {
@@ -86,11 +124,6 @@
   fill: currentColor;
 }
 
-.footer-address {
-  font-style: normal;
-  color: $white-color;
-}
-
 .footer-form-title {
   margin-bottom: 20px;
 
@@ -102,13 +135,14 @@
 }
 
 .footer-form {
-  display: flex;
+  @include mq(desktop) {
+    display: flex;
+  }
 }
 
 .footer-form-email {
-  margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
 
   font-size: 16px;
   line-height: 1.25;
@@ -122,6 +156,19 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @include mq(not-desktop) {
+    margin-bottom: 20px;
+  }
+
+  @include mq(tablet) {
+    width: 450px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -143,6 +190,11 @@
   &:focus {
     background-color: $hover-color;
     outline: transparent;
+  }
+
+  @include mq(not-desktop) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

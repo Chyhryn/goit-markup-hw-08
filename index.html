@@ -26,6 +26,24 @@
   <body>
     <!-- Header -->
     <header class="header">
+      <div class="container header-mobile">
+        <a
+          class="logo header-logo"
+          href="./index.html"
+          aria-label="Логотип WebStudio"
+          >Web<span class="black-logo">Studio</span></a
+        >
+        <button
+          class="mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header-mobile-icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-icon"></use>
+          </svg>
+        </button>
+      </div>
       <div class="container header-container">
         <a
           class="logo header-logo"
@@ -49,7 +67,7 @@
         <ul class="contacts-list list">
           <li class="contacts-item">
             <a class="contacts-link link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+              <svg class="contacts-icon mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
@@ -57,7 +75,7 @@
           </li>
           <li class="contacts-item">
             <a class="contacts-link link" href="tel:380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+              <svg class="contacts-icon phone-icon" width="10" height="16">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -146,7 +164,7 @@
                     <svg class="modal-form__check-icon" width="16" height="15">
                       <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                    <span
+                    <span class="modal-form__chckbox-description"
                       >Соглашаюсь с рассылкой и принимаю
                       <a class="modal-form__link" href="" target="_blank"
                         >Условия договора</a
@@ -246,6 +264,10 @@
             <li class="services-list__item">
               <img
                 class="services-list__img image"
+                srcset="
+                  ./images/services/backend.jpg    1x,
+                  ./images/services/backend@2x.jpg 2x
+                "
                 src="./images/services/backend.jpg"
                 alt="Программист печатает код"
                 width="370"
@@ -256,6 +278,10 @@
             <li class="services-list__item">
               <img
                 class="services-list__img image"
+                srcset="
+                  ./images/services/frontend.jpg    1x,
+                  ./images/services/frontend@2x.jpg 2x
+                "
                 src="./images/services/frontend.jpg"
                 alt="Программист верстает приложение"
                 width="370"
@@ -266,6 +292,10 @@
             <li class="services-list__item">
               <img
                 class="services-list__img image"
+                srcset="
+                  ./images/services/design.jpg    1x,
+                  ./images/services/design@2x.jpg 2x
+                "
                 src="./images/services/design.jpg"
                 alt="Дизайнер работает с палитрой"
                 width="370"
@@ -282,13 +312,39 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="member-item">
-              <img
-                class="image"
-                src="./images/members/igor-demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/members/igor-demyanenko-lg.jpg    1x,
+                    ./images/members/igor-demyanenko-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/members/igor-demyanenko-md.jpg    1x,
+                    ./images/members/igor-demyanenko-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/members/igor-demyanenko-sm.jpg    1x,
+                    ./images/members/igor-demyanenko-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="image"
+                  src="./images/members/igor-demyanenko-sm.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="member-item-group">
                 <h3 class="member-title">Игорь Демьяненко</h3>
                 <p class="member-position" lang="en">Product Designer</p>
@@ -341,13 +397,39 @@
               </div>
             </li>
             <li class="member-item">
-              <img
-                class="image"
-                src="./images/members/olga-repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/members/olga-repina-lg.jpg    1x,
+                    ./images/members/olga-repina-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/members/olga-repina-md.jpg    1x,
+                    ./images/members/olga-repina-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/members/olga-repina-sm.jpg    1x,
+                    ./images/members/olga-repina-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="image"
+                  src="./images/members/olga-repina-sm.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="member-item-group">
                 <h3 class="member-title">Ольга Репина</h3>
                 <p class="member-position" lang="en">Frontend Developer</p>
@@ -400,13 +482,39 @@
               </div>
             </li>
             <li class="member-item">
-              <img
-                class="image"
-                src="./images/members/nikolaj-tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/members/nikolaj-tarasov-lg.jpg    1x,
+                    ./images/members/nikolaj-tarasov-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/members/nikolaj-tarasov-md.jpg    1x,
+                    ./images/members/nikolaj-tarasov-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/members/nikolaj-tarasov-sm.jpg    1x,
+                    ./images/members/nikolaj-tarasov-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="image"
+                  src="./images/members/nikolaj-tarasov-sm.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="member-item-group">
                 <h3 class="member-title">Николай Тарасов</h3>
                 <p class="member-position" lang="en">Marketing</p>
@@ -459,13 +567,39 @@
               </div>
             </li>
             <li class="member-item">
-              <img
-                class="image"
-                src="./images/members/mihail-ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/members/mihail-ermakov-lg.jpg    1x,
+                    ./images/members/mihail-ermakov-lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/members/mihail-ermakov-md.jpg    1x,
+                    ./images/members/mihail-ermakov-md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/members/mihail-ermakov-sm.jpg    1x,
+                    ./images/members/mihail-ermakov-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="image"
+                  src="./images/members/mihail-ermakov-sm.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="member-item-group">
                 <h3 class="member-title">Михаил Ермаков</h3>
                 <p class="member-position" lang="en">UI Designer</p>
@@ -642,6 +776,67 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-close-btn js-close-menu" type="button">
+        <svg class="mobile-menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#mobile-close-icon"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav__list list">
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link current" href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-list__item">
+          <a class="mobile-contacts-list__link link" href="tel:380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts-list__item">
+          <a
+            class="mobile-contacts-list__link mobile-contacts-list__link--smaller link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

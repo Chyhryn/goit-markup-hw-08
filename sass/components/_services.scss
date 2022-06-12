@@ -1,5 +1,9 @@
 .services {
   padding-top: 0;
+
+  @include mq(not-desktop) {
+    display: none;
+  }
 }
 
 .services__title {

@@ -1,8 +1,10 @@
 // Utils
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 // Base
+@import "./base/body";
 @import "./base/reset";
 @import "./base/container";
 @import "./base/section";
@@ -11,6 +13,7 @@
 
 // Components
 @import "./components/logo";
+@import "./components/mobile-menu";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";

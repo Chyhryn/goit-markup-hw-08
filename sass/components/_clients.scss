@@ -1,24 +1,47 @@
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $secondary-color;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 }
 
 .clients-item {
-  margin-right: 30px;
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
 
-  &:last-child {
-    margin-right: 0;
+  @include mq(tablet) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @include mq(desktop) {
+    margin: 0;
+    margin-right: 30px;
+    flex-basis: calc((100% - 150px) / 6);
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -27,20 +50,21 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
-  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
 
-  border: 1px solid $icons-main-color;
+  outline: 1px solid $icons-main-color;
   border-radius: 4px;
   color: $icons-main-color;
 
   transition: color $anim-duration $anim-timing-function,
-    border-color $anim-duration $anim-timing-function;
+    outline-color $anim-duration $anim-timing-function;
 
   &:hover,
   &:focus {
     color: $accent-color;
-    border-color: $accent-color;
+    outline-color: $accent-color;
   }
 }
 

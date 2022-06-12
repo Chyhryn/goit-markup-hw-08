@@ -25,6 +25,24 @@
   </head>
   <body>
     <!-- Header -->
+    <div class="container header-mobile">
+      <a
+        class="logo header-logo"
+        href="./index.html"
+        aria-label="Логотип WebStudio"
+        >Web<span class="black-logo">Studio</span></a
+      >
+      <button
+        class="mobile-menu-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+      >
+        <svg class="header-mobile-icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-icon"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="container header-container">
         <a
@@ -95,13 +113,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/tehnokryak.jpg"
-                    alt="Проект Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-1_lg.jpg    1x,
+                        ./images/works/work-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-1_md.jpg    1x,
+                        ./images/works/work-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-1_sm.jpg    1x,
+                        ./images/works/work-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-1_sm.jpg"
+                      alt="Проект Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -117,13 +161,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/poster-new-orlean-vs-golden-star.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-2_lg.jpg    1x,
+                        ./images/works/work-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-2_md.jpg    1x,
+                        ./images/works/work-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-2_sm.jpg    1x,
+                        ./images/works/work-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-2_sm.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -141,13 +211,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/restoran-seafood.jpg"
-                    alt="Проект ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-3_lg.jpg    1x,
+                        ./images/works/work-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-3_md.jpg    1x,
+                        ./images/works/work-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-3_sm.jpg    1x,
+                        ./images/works/work-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-3_sm.jpg"
+                      alt="Проект ресторан Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -165,13 +261,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/proekt-prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-4_lg.jpg    1x,
+                        ./images/works/work-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-4_md.jpg    1x,
+                        ./images/works/work-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-4_sm.jpg    1x,
+                        ./images/works/work-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-4_sm.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -189,13 +311,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/proekt-boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-5_lg.jpg    1x,
+                        ./images/works/work-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-5_md.jpg    1x,
+                        ./images/works/work-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-5_sm.jpg    1x,
+                        ./images/works/work-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-5_sm.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -213,13 +361,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/inspiration-has-no-borders.jpg"
-                    alt="Проект Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-6_lg.jpg    1x,
+                        ./images/works/work-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-6_md.jpg    1x,
+                        ./images/works/work-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-6_sm.jpg    1x,
+                        ./images/works/work-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-6_sm.jpg"
+                      alt="Проект Inspiration has no Borders"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -237,13 +411,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/izdanie-limited-edition.jpg"
-                    alt="Проект издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-7_lg.jpg    1x,
+                        ./images/works/work-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-7_md.jpg    1x,
+                        ./images/works/work-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-7_sm.jpg    1x,
+                        ./images/works/work-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-7_sm.jpg"
+                      alt="Проект издание Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -261,13 +461,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/proekt-lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-8_lg.jpg    1x,
+                        ./images/works/work-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-8_md.jpg    1x,
+                        ./images/works/work-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-8_sm.jpg    1x,
+                        ./images/works/work-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-8_sm.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -283,13 +509,39 @@
             <li class="works-item">
               <a class="work-link" href=""
                 ><div class="thumb">
-                  <img
-                    class="image"
-                    src="./images/works/growing-business.jpg"
-                    alt="Проект Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/work-9_lg.jpg    1x,
+                        ./images/works/work-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/work-9_md.jpg    1x,
+                        ./images/works/work-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/works/work-9_sm.jpg    1x,
+                        ./images/works/work-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="image"
+                      src="./images/works/work-9_sm.jpg"
+                      alt="Проект Growing Business"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="work-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -385,5 +637,66 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-close-btn js-close-menu" type="button">
+        <svg class="mobile-menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#mobile-close-icon"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav__list list">
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a
+              class="mobile-menu-nav__link link current"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-list__item">
+          <a class="mobile-contacts-list__link link" href="tel:380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts-list__item">
+          <a
+            class="mobile-contacts-list__link mobile-contacts-list__link--smaller link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-social-list__item">
+          <a class="mobile-social-list_link link" href="">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -28,8 +28,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $anim-duration $anim-timing-function;
 
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  width: 100%;
+  height: 609px;
+
+  @include mq(desktop) {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal-wrapper {
@@ -75,11 +81,17 @@
 
 .modal-form__title {
   display: block;
-  font-size: 20px;
-  line-height: 1.15;
   margin-bottom: 12px;
 
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
   color: $secondary-color;
+
+  @include mq(desktop) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__wrapper {
@@ -175,6 +187,13 @@
   .modal-form__checkbox:checked + & {
     outline: transparent;
     background-color: $accent-color;
+  }
+}
+
+.modal-form__chckbox-description {
+  @include mq(not-desktop) {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 
